@@ -1,0 +1,14 @@
+@import 'styles/_general.scss';
+@import 'styles/_mixins.scss';
+@import 'styles/_variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px;
+  @include flexContainer(space-around, center);
+  color: $secondaryTextColor;
+  background-color: $secondaryBgColor;
+}

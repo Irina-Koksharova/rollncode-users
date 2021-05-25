@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+React SPA.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Использовать react, redux, redux-saga, react-router. Дизайн с применением SCSS.
+Экран - Хедер, основной контент, футер всегда прижатый к низу после остального
+контента. Каждый элемент отдельный компонент. Пока данные грузятся отображать
+лоадер. В хедере отображать часы (20:20:21) с обновлением каждые 250мс и
+количество отмеченных пользователей. Должна быть страница 404. С сайта
+https://randomuser.me загрузить 20 юзеров, данные положить в редакс. На главном
+экране отобразить табы, в первом табе список юзеров с redux, во втором - список
+только отмеченных. Внизу списка кнопка загрузить больше( загружаем еще 20 юзеров
+и добавляем в список). Список юзеров(полный и отмеченных) должен содержать текст
+инпут фильтрации. Между вводом данных и началом фильтрации должна быть задержка
+250 мс. Списки должны фильтроваться по полям firstname, lastname.
 
-## Available Scripts
+Список отображает ид и аватар, firstname, lastname, кнопку отметить
+пользователя(по клику). если пользователь отмечен, под кнопкой отметки должно
+отображаться время добавления. Список отмеченных должен хранится в саге,
+включать ид и время добавления. Кнопка отметить должна менять свой вид в
+зависимости отмеченный юзер или нет.
 
-In the project directory, you can run:
+По клику на юзера - выполнять навигацию на ссылку “/user/{id}” по которой будет
+отображаться экран “User details”. На экране детального описания показывать
+аватар, адрес, емейл, пол, дату рождения, телефон. когда открыт экран детального
+в хедере отображать кнопку назад, при нажатии открывается начальный список.
 
-### `npm start`
+Использовать stateless components, hooks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Random User Generator | Home https://randomuser.me
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Код необходимо залить на гитхаб и предоставить ссылку на него.
