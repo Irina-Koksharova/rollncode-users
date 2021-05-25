@@ -1,4 +1,3 @@
-@import 'styles/_general.scss';
 @import 'styles/_mixins.scss';
 @import 'styles/_variables.scss';
 
@@ -9,6 +8,6 @@
   width: 100%;
   padding: 20px 0px;
   @include flexContainer(space-around, center);
-  color: $secondaryTextColor;
-  background-color: $secondaryBgColor;
+  color: $secondaryColor;
+  background-color: $accentColor;
 }

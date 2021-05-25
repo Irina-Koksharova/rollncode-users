@@ -1,0 +1,19 @@
+@import 'styles/_variables.scss';
+
+.icon__button {
+  border: 2px solid $accentColor;
+  border-radius: 3px;
+  background-color: transparent;
+
+  & svg {
+    fill: $accentColor;
+  }
+
+  &.checked {
+    background-color: $accentColor;
+  }
+
+  &.checked svg {
+    fill: $secondaryColor;
+  }
+}

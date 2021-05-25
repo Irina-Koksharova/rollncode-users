@@ -1,0 +1,14 @@
+@import 'styles/_variables.scss';
+
+.table__filter {
+  width: 100%;
+  padding: 3px;
+  font-size: 12px;
+  border: 2px solid inherit;
+  border-radius: 3px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid $accentColor;
+  }
+}

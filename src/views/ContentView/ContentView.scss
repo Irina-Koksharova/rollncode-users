@@ -1,0 +1,12 @@
+@import 'styles/_mixins.scss';
+
+.users__section {
+  @include flexContainer(space-between, stretch);
+}
+
+.allUsers__container,
+.markedUsers__container {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}

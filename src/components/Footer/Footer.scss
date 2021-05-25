@@ -1,4 +1,3 @@
-@import 'styles/_general.scss';
 @import 'styles/_variables.scss';
 
 .footer {
@@ -8,6 +7,6 @@
   width: 100%;
   padding: 20px 0px;
   text-align: center;
-  color: $secondaryTextColor;
-  background-color: $secondaryBgColor;
+  color: $secondaryColor;
+  background-color: $accentColor;
 }

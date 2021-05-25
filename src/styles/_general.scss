@@ -12,10 +12,25 @@ code {
     monospace;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 p {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
+img {
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+button {
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
